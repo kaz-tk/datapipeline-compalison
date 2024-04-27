@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "luigik8s"
+version = "0.1.0"
+description = ""
+authors = ["Kazushige TAKEUCHI <kazushige.takeuchi@sony.com>"]
+readme = "README.md"
+packages = [{include = "luigik8s", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+luigi = "^3.5.0"
+kubeluigi = "^1.0.5"
+pykube-ng = "^23.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,21 @@
+apiVersion: skaffold/v4beta10
+kind: Config
+metadata:
+  name: luigi
+build:
+  artifacts:
+    - image: luigik8s
+      docker:
+        dockerfile: Dockerfile
+
+deploy:
+  helm:
+    releases:
+      - name: luigi
+        chartPath: assets/chart
+        setValueTemplates:
+  kubectl: {}
+manifests:
+  rawYaml:
+    - assets/kubernetes/job.yaml
+

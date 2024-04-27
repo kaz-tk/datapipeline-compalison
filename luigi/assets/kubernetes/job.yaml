@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: luigik8s
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - name: luigik8s
+        image: luigik8s
+        resources: {}
+      restartPolicy: Never
+status: {}
