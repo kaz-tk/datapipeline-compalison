@@ -1,0 +1,10 @@
+# example requirements
+boto3
+botocore
+
+apache-airflow
+pandas
+psycopg2-binary
+apache-airflow-providers-celery
+celery[redis]
+apache-airflow[cncf.kubernetes]
